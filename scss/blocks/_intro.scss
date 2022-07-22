@@ -1,0 +1,28 @@
+.intro__title {
+  letter-spacing: 1px;
+  @include font-styles(500, 15px, 21px);
+  color: rgba(173, 181, 189, 1);
+}
+
+.intro__heading {
+  color: rgba(52, 58, 64, 1);
+}
+
+.intro__text {
+  color: rgba(73, 80, 87, 1);
+}
+
+.intro__img {
+  transition: ease 0.3s;
+}
+
+.intro__img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 10px rgba(204, 204, 204, 0.325);
+}
+
+@include breakpoint-down(768px) {
+  .intro__item {
+    margin-bottom: 40px;
+  }
+}

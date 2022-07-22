@@ -1,0 +1,25 @@
+.header {
+  z-index: 5;
+}
+
+.header__hamburger-link {
+  display: none;
+}
+
+.header__img {
+  transition: 0.3s ease;
+}
+
+.header__img:hover {
+  transform: scale(1.2);
+}
+
+@include breakpoint-down(991px) {
+  .header__list {
+    display: none;
+  }
+
+  .header__hamburger-link {
+    display: block;
+  }
+} 
